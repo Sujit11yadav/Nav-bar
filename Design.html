@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+  box-sizing: border-box;
+}
+        #div1{
+            height:300px;
+            width:300px;
+            background-color:red;
+            margin:0;
+            }
+        #div2{
+            height:300px;
+            width:300px;
+            background-color:green;
+            position:relative;
+            left:320px;
+            bottom:300px;
+            }
+         #div3{
+            height:300px;
+            width:300px;
+            background-color:yellow;
+            position:relative;
+            bottom:280px;
+            }
+        #div4{
+            height:300px;
+            width:300px;
+            background-color:blue;
+            position:relative;
+            left:320px;
+            bottom:580px;
+            
+            }
+            .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+            
+    </style>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+      </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Title</span>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+    <div id="div1">
+    </div>
+
+    <div id="div2">
+    </div>
+
+    <div id="div3">
+    </div>
+
+    <div id="div4"> 
+    </div>
+
+</body>
+
+</html>
